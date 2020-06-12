@@ -25,7 +25,8 @@ public class NumericAction extends ActionSupport {
 
 	public String mul() throws Exception {
 		this.setResult(number1 * number2);
-		return ActionSupport.SUCCESS;
+		//return ActionSupport.SUCCESS;
+		throw new NullPointerException();
 	}
 
 	public String div() throws Exception {
